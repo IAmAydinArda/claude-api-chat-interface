@@ -1,5 +1,7 @@
 # Claude AI Chat Application
 
+## https://iamaydinarda.github.io/claude-api-chat-interface/
+
 A modern, interactive chat interface for communicating with Claude AI through the Georgian College API. Built with vanilla JavaScript, HTML, and CSS.
 
 ## 🚀 Features
@@ -28,7 +30,7 @@ A modern, interactive chat interface for communicating with Claude AI through th
 ## 🚀 Quick Start
 
 ### Option 1: Live Demo
-1. Visit the deployed application
+1. Visit the deployed application at https://iamaydinarda.github.io/claude-api-chat-interface/
 2. Enter your Student API Key when prompted
 3. Start chatting with Claude!
 
@@ -47,6 +49,17 @@ A modern, interactive chat interface for communicating with Claude AI through th
    - When the application loads, you'll be asked for Student API Key or you can enter it via Logout button anytime
    - Enter your student ID (e.g., 153243854)
    - Click "Start Chatting"
+
+4. **(Optional) Create a config file for convenience**
+   - Create a config file named `apiKey.js` in the project root:
+     ```javascript
+     const apiConfig = {
+       // Your Student API Key (Student ID) — leave empty to prompt for input
+       studentApiKey: ""
+     };
+     ```
+   - This allows the app to auto-fill your API key and skip the input modal.
+   - Useful if you prefer not to re-enter your key after clearing cache or restarting the browser.
 
 ## 🎯 How to Use
 
