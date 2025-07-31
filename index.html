@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Claude AI API Integration</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/normalize.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<script src="apiKey.js"></script>
+	<script src="js/claude-api.js" defer></script>
+</head>
+
+<body>
+	<h1>Claude AI API Integration</h1>
+	
+	<div class="app-container">
+		<div class="chat-sidebar">
+			<div class="sidebar-header">
+				<button type="button" id="new-chat">Add New Chat</button>
+				<button type="button" id="logout-btn">Logout</button>
+			</div>
+			<div class="chat-list" id="chat-list">
+				<!-- Chat list will be populated here. -->
+			</div>
+		</div>
+		
+		<div class="main-content">
+			<form>
+				<label for="user-message">Your Message:</label>
+				<textarea id="user-message" placeholder="Type your message to Claude..." rows="4"></textarea>
+				<div class="button-group">
+					<button type="button" id="send-message">Send Message</button>
+					<button type="button" id="check-usage">Check Usage</button>
+					<button type="button" id="clear-conversation">Clear Conversation</button>
+				</div>
+			</form>
+			
+			<section id="results"></section>
+		</div>
+	</div>
+
+	<!-- API Key Modal. -->
+	<div id="api-key-modal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2>Welcome to Claude AI Chat</h2>
+				<p>Please enter your API Key to get started.</p>
+			</div>
+			<div class="modal-body">
+				<form id="api-key-form">
+					<label for="api-key-input">Student API Key (Student ID):</label>
+					<input type="text" id="api-key-input" placeholder="Please enter your key." required>
+					<div class="modal-buttons">
+						<button type="submit" id="submit-api-key">Start Chatting</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
